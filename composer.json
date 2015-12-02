@@ -1,5 +1,5 @@
 {
-  "name": "elasticquent/elasticquent",
+  "name": "metricsocom/elasticquent",
   "type": "library",
   "description": "Map Laravel Eloquent models to Elasticsearch types.",
   "keywords": [
