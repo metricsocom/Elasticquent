@@ -1,7 +1,6 @@
 <?php namespace Elasticquent;
 
-use \Elasticquent\ElasticquentCollection as ElasticquentCollection;
-use \Elasticquent\ElasticquentResultCollection as ResultCollection;
+use Elasticquent\ElasticquentResultCollection as ResultCollection;
 
 /**
  * Elasticquent Trait
@@ -608,5 +607,16 @@ trait ElasticquentTrait
         }
 
         return $instance;
+    }
+}
+
+
+/*
+ * Helper function for laravel 4
+ */
+if (!function_exists('config')) {
+    function config()
+    {
+        return app('config');
     }
 }
