@@ -1,6 +1,7 @@
 <?php namespace Elasticquent;
 
 use Elasticquent\ElasticquentResultCollection as ResultCollection;
+use Elasticsearch\ClientBuilder;
 
 /**
  * Elasticquent Trait
@@ -60,7 +61,7 @@ trait ElasticquentTrait
             $config = config()->get('elasticquent.config');
         }
 
-        return new \Elasticsearch\Client($config);
+        return ClientBuilder::fromConfig($config);
     }
 
     /**
